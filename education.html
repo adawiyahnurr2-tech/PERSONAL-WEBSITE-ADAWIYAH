@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>EDUCATION</title>
+  <link rel="stylesheet" href="dark.css">
+  <style>
+    body {
+      font-family: 'Trebuchet MS', Arial, sans-serif;
+      background-color: #111;
+      color: #222;
+    }
+    h1, h2 {
+      color: #a020f0;
+      text-shadow: 0 0 10px #a020f0;
+    }
+
+    
+    .education-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 30px;
+      margin-top: 20px;
+    }
+    .edu-box {
+      background: #fff;
+      padding: 20px;
+      border-radius: 15px;
+      box-shadow: 0 4px 12px rgba(160,32,240,0.5);
+      text-align: center;
+    }
+    .edu-box h2 {
+      color: #a020f0;
+      margin-bottom: 15px;
+      text-shadow: 0 0 5px #a020f0;
+    }
+    .cassette {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      box-shadow: 0 0 15px #a020f0;
+      margin-bottom: 15px;
+    }
+    .edu-images img {
+      width: 100%;
+      border-radius: 10px;
+      margin-top: 10px;
+      transition: transform 0.5s ease;
+      box-shadow: 0 0 10px rgba(160,32,240,0.5);
+    }
+    .edu-images img:hover {
+      transform: scale(1.05);
+    }
+
+    /* Table */
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 30px;
+      font-size: 16px;
+    }
+    table th, table td {
+      border: 1px solid #a020f0;
+      padding: 10px;
+      text-align: center;
+    }
+    table th {
+      background: #333;
+      color: #a020f0;
+      text-shadow: 0 0 5px #a020f0;
+    }
+
+    /* Experience box */
+    .experience-box {
+      background: #fff;
+      padding: 20px;
+      border-radius: 15px;
+      box-shadow: 0 4px 12px rgba(160,32,240,0.5);
+      margin-top: 30px;
+    }
+    .experience-box h2 {
+      color: #a020f0;
+      text-shadow: 0 0 5px #a020f0;
+    }
+    .experience-box ol {
+      margin-top: 15px;
+      padding-left: 20px;
+      color: #222;
+    }
+    .experience-box ol li {
+      margin-bottom: 10px;
+      text-shadow: 0 0 5px #a020f0;
+    }
+
+    /* Button + image popup */
+    .btn {
+      background: #a020f0;
+      color: #fff;
+      border: none;
+      padding: 10px 20px;
+      margin-top: 20px;
+      cursor: pointer;
+      border-radius: 8px;
+      font-size: 16px;
+      text-shadow: 0 0 5px #fff;
+      box-shadow: 0 0 10px #a020f0;
+    }
+    .popup-img {
+      display: none;
+      margin-top: 20px;
+      max-width: 400px;
+      border-radius: 10px;
+      box-shadow: 0 0 20px #a020f0;
+    }
+  </style>
+</head>
+
+<body class="custom-bg">
+
+<!-- NAVBAR -->
+<nav class="dark-navbar">
+  <a href="index.html">Home</a>
+  <a href="about.html">About Me</a>
+  <a href="family.html">Family</a>
+  <a href="education.html">Education</a>
+  <a href="experience.html">Experience</a>
+  <a href="friends.html">Friends</a>
+  <a href="playlist.html">Playlist</a>
+  <a href="movies.html">Movies</a>
+  <a href="islamic.html">Islamic Reflections</a>
+</nav>
+
+
+<audio autoplay loop>
+  <source src="audio/SNAP.mp3" type="audio/mpeg">
+</audio>
+
+
+<section class="about-container">
+  <h1>My Education Journey</h1>
+  <p>Here are the places I studied, from kindergarten to university.</p>
+
+  <div class="education-grid">
+
+    
+    <div class="edu-box">
+      <h2>PASTI</h2>
+      <img src="image/pasti.jpg" class="cassette" alt="PASTI">
+      <div class="edu-images">
+        <img src="image/pasti2.jpg" alt="PASTI 2">
+      </div>
+    </div>
+
+  
+    <div class="edu-box">
+      <h2>MDT</h2>
+      <img src="image/mdt1.jpg" class="cassette" alt="MDT">
+      <div class="edu-images">
+        <img src="image/mdt2.jpg" alt="MDT 2">
+        <img src="image/mdt3.jpg" alt="MDT 3">
+        <img src="image/mdt4.jpg" alt="MDT 4">
+      </div>
+    </div>
+
+
+    <div class="edu-box">
+      <h2>SMK</h2>
+      <img src="image/smkbt.jpg" class="cassette" alt="SMK">
+      <div class="edu-images">
+        <img src="image/smk1.jpg" alt="SMK 1">
+        <img src="image/smk2.jpg" alt="SMK 2">
+        <img src="image/smk3.jpg" alt="SMK 3">
+        <img src="image/smk4.jpg" alt="SMK 4">
+      </div>
+    </div>
+
+    
+    <div class="edu-box">
+      <h2>UiTM</h2>
+      <img src="image/uni.JFIF" class="cassette" alt="UiTM">
+      <div class="edu-images">
+        <img src="image/uitm1.jpg" alt="UiTM 1">
+        <img src="image/uitm2.jpg" alt="UiTM 2">
+        <img src="image/uitm3.jpg" alt="UiTM 3">
+        <img src="image/uitm5.jpg" alt="UiTM 5">
+      </div>
+    </div>
+
+  </div>
+
+
+  <h2>Education Summary</h2>
+  <table>
+    <tr>
+      <th>No</th>
+      <th>Institution</th>
+      <th>Years</th>
+      <th>Notes</th>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>PASTI</td>
+      <td>2010</td>
+      <td>Kindergarten (Islamic)</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>MDT</td>
+      <td>2012</td>
+      <td>Primary Religious School</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>SMK</td>
+      <td>2018–2022</td>
+      <td>Secondary School</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>UiTM</td>
+      <td>2023–2026</td>
+      <td>Diploma in Information Management</td>
+    </tr>
+  </table>
+
+
+<a href="index.html">Home</a>
+  <a href="about.html">About Me</a>
+  <a href="family.html">Family</a>
+  <a href="education.html">Education</a>
+  <a href="experience.html">Experience</a>
+  <a href="friends.html">Friends</a>
+  <a href="playlist.html">Playlist</a>
+  <a href="movies.html">Movies</a>
+  <a href="islamic.html">Islamic Reflections</a>  <!-- MAPS UiTM Machang -->
+  <h2>Location: UiTM Machang</h2>
+  <iframe src="https://www.google.com/maps/embed?pb=!1

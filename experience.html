@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>EXPERIENCE</title>
+  <link rel="stylesheet" type="text/css" href="dark.css">
+</head>
+
+<body class="custom-bg">
+
+
+<nav class="dark-navbar">
+  <a href="index.html">Home</a>
+  <a href="about.html">About Me</a>
+  <a href="family.html">Family</a>
+  <a href="education.html">Education</a>
+  <a href="experience.html">Experience</a>
+  <a href="friends.html">Friends</a>
+  <a href="playlist.html">Playlist</a>
+  <a href="movies.html">Movies</a>
+  <a href="islamic.html">Islamic Reflections</a>
+</nav>
+
+
+<section class="experience-box">
+  <h2>My UiTM Experiences</h2>
+  <ul>
+    <li>Joined <b>Splash Run</b> event</li>
+    <button class="btn" onclick="showMedia('sr')">View Splash Run Photos</button>
+    <div id="sr" class="popup-media">
+      <img src="image/sr1.jpg" alt="Splash Run 1">
+      <img src="image/sr2.jpg" alt="Splash Run 2">
+    </div>
+
+    <li>Joined co-curricular activity <b>Kesatria Negara</b> (Semester 1–3)</li>
+    <button class="btn" onclick="showMedia('kn')">View Kesatria Photos</button>
+    <div id="kn" class="popup-media">
+      <img src="image/kn1.jpg" alt="Kesatria 1">
+      <img src="image/kn2.jpg" alt="Kesatria 2">
+    </div>
+
+    <li>Organized <b>InfoFest</b> program</li>
+    <button class="btn" onclick="showMedia('if')">View InfoFest Photos</button>
+    <div id="if" class="popup-media">
+      <img src="image/if1.jpg" alt="InfoFest 1">
+      <img src="image/if2.jpg" alt="InfoFest 2">
+      <img src="image/if3.jpg" alt="InfoFest 3">
+      <img src="image/if4.jpg" alt="InfoFest 4">
+    </div>
+
+    <li>Joined <b>Semarak Seni</b> arts program organized by UiTM</li>
+    <button class="btn" onclick="showMedia('ss')">View Semarak Seni Videos</button>
+    <div id="ss" class="popup-media">
+      <video controls>
+        <source src="video/ss1.MOV" type="video/mp4">
+      </video>
+      <video controls>
+        <source src="video/ss2.MOV" type="video/mp4">
+      </video>
+    </div>
+  </ul>
+</section>
+
+<script>
+  function showMedia(id) {
+    // Hide all media first
+    var medias = document.getElementsByClassName("popup-media");
+    for (let i = 0; i < medias.length; i++) {
+      medias[i].style.display = "none";
+    }
+    
+    document.getElementById(id).style.display = "block";
+  }
+</script>
+
+
+<section class="location-section">
+  <h1>Location at UiTM Machang</h1>
+  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d508086.9438419671!2d102.44128169835852!3d5.794886256835443!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31b68fe6f50d123f%3A0xaeb67217536d6442!2sUiTM%20Machang!5e0!3m2!1sen!2smy!4v1767867487736!5m2!1sen!2smy" 
+    width="80%" height="500" style="border:0; border-radius:15px; box-shadow:0 0 20px rgba(160,32,240,0.7);" 
+    allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+  </iframe>
+</section>
+
+</body>
+</html>
+
+
+<footer class="dark-footer">
+  © adawiyahnur 2026
+</footer>
+
+</body>
+</html>

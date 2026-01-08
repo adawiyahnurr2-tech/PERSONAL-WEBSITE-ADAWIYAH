@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <title>ABOUT ME</title>
+ <link rel="stylesheet" type="text/css" href="dark.css">
+ <style>
+   
+   .about-gallery .polaroid img {
+     transition: transform 0.6s ease, opacity 1s ease;
+   }
+   .about-gallery .polaroid img:hover {
+     transform: scale(1.1) rotate(2deg); /* zoom + tilt sikit */
+     opacity: 0.8; /* fade sikit bila hover */
+   }
+
+   
+   .about-gallery .polaroid img {
+     animation: fadeInMove 3s ease forwards;
+   }
+
+   @keyframes fadeInMove {
+     from { opacity: 0; transform: translateY(30px); }
+     to { opacity: 1; transform: translateY(0); }
+   }
+ </style>
+</head>
+<body class="custom-bg">
+    
+    
+    <audio autoplay loop>
+      <source src="audio/intro.mp3" type="audio/mpeg">
+      Your browser does not support the audio element.
+    </audio>
+
+    
+    <nav class="dark-navbar">
+    <a href="index.html">Home</a>
+  <a href="about.html">About Me</a>
+  <a href="family.html">Family</a>
+  <a href="education.html">Education</a>
+  <a href="experience.html">Experience</a>
+  <a href="friends.html">Friends</a>
+  <a href="playlist.html">Playlist</a>
+  <a href="movies.html">Movies</a>
+  <a href="islamic.html">Islamic Reflections</a>
+    </nav>
+
+<section class="about-container">
+    <h1>About Me</h1>
+    <p>
+        Hi! My name is <b>Nur Adawiyah</b>, I am 21 years old in 2026.
+        I love taking pictures, exploring new places, trying adventurous activities and listening to music.
+    </p>
+
+    <div class="about-gallery">
+        <div class="polaroid"><img src="image/pic1.jpg"></div>
+        <div class="polaroid"><img src="image/pic2.jpg"></div>
+        <div class="polaroid"><img src="image/pic3.jpg"></div>
+        <div class="polaroid"><img src="image/pic4.jpg"></div>
+        <div class="polaroid"><img src="image/pic9.jpg"></div>
+        <div class="polaroid"><img src="image/pic8.jpg"></div>
+        <div class="polaroid"><img src="image/pic7.jpg"></div>
+        <div class="polaroid"><img src="image/pic5.jpg"></div>
+    </div>
+
+    <div class="reach-me">
+        <h2>Reach Me Here</h2>
+        <a href="https://www.instagram.com/_.penurd?igsh=dzM4aHpieGd5Z2Fp&utm_source=qr" target="_blank">Instagram</a>
+        <span>|</span>
+        <a href="https://www.tiktok.com/@advyouu?_r=1&_t=ZS-92riSY2w87l" target="_blank">TikTok</a> 
+    </div>  
+</section>
+
+<footer class="dark-footer">
+    © adawiyahnur 2026
+</footer>
+
+</body>
+</html>
